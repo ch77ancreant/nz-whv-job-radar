@@ -1,0 +1,12 @@
+id: auckland-cafe-service
+name: Auckland Cafe Service
+enabled: true
+country: NZ
+locations: [Auckland]
+keywords: [cafe assistant, front of house, counter staff, kitchen hand]
+exclude_title: [barista, coffee maker, cafe all-rounder, head barista]
+employers: []
+max_results: 100
+max_pages: 3
+# Only --notify sends; these labels also control offline --dry-run previews.
+notification_labels: [likely_suitable, needs_confirmation]

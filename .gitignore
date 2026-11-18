@@ -1,0 +1,20 @@
+# Local secrets
+.env
+venv
+
+# Python and local runtime output
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+build/
+dist/
+/data/
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+.coverage
+htmlcov/

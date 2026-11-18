@@ -1,0 +1,98 @@
+{
+  "fixtureKind": "live_run_metadata_projection_with_schema_extract",
+  "observedOn": "2026-09-23",
+  "provenance": {
+    "provider": "Apify",
+    "actor": "blackfalcondata/seek-scraper",
+    "actorId": "5BAoYcBhwvPuMtd0K",
+    "buildId": "CRzwHtgqdMgvEKwQa",
+    "buildNumber": "0.4.57",
+    "schemaEndpoint": "https://api.apify.com/v2/actors/5BAoYcBhwvPuMtd0K/builds/CRzwHtgqdMgvEKwQa/openapi.json",
+    "method": "Live API reads; allowlisted projection, not a complete response"
+  },
+  "schemaExtract": {
+    "query": {"type": "string"},
+    "country": {"type": "string", "default": "AU"},
+    "maxResults": {"type": "integer", "default": 100, "minimum": 0, "maximum": 5000},
+    "maxPages": {"type": "integer", "default": 25, "minimum": 1, "maximum": 100},
+    "incrementalMode": {"type": "boolean", "default": false},
+    "stateKey": {"type": "string"},
+    "emitUnchanged": {"type": "boolean", "default": false},
+    "emitExpired": {"type": "boolean", "default": false}
+  },
+  "launchQueryParameters": {
+    "build": "0.4.57",
+    "timeout": 120,
+    "maxTotalChargeUsd": 0.05,
+    "waitForFinish": 20
+  },
+  "runs": [
+    {
+      "runId": "SyntheticRunFail1",
+      "startHttpStatus": 201,
+      "status": "FAILED",
+      "startedAt": "2026-09-23T06:17:36.132Z",
+      "finishedAt": "2026-09-23T06:17:39.251Z",
+      "defaultDatasetId": "SyntheticDataset2",
+      "defaultKeyValueStoreId": "SyntheticKvStore2",
+      "datasetReadHttpStatus": 200,
+      "observedItemCount": 0,
+      "errorCode": "SEK-4002",
+      "errorSummary": "Incremental saved state could not be opened; exact missing permission or Actor defect remains unconfirmed.",
+      "usageTotalUsd": 0.01,
+      "chargedEventCounts": {"apify-actor-start": 1, "apify-default-dataset-item": 0},
+      "input": {
+        "query": "[\"cafe assistant\",\"front of house\"]",
+        "country": "NZ",
+        "location": "Auckland",
+        "maxResults": 1,
+        "maxPages": 1,
+        "sortMode": "date",
+        "includeDetails": true,
+        "includeApplicantInsights": false,
+        "descriptionFormat": "text",
+        "compact": false,
+        "incrementalMode": true,
+        "stateKey": "nz-whv-phase0-smoke-20260923-v1",
+        "emitUnchanged": false,
+        "emitExpired": false,
+        "skipReposts": false
+      }
+    },
+    {
+      "runId": "SyntheticRunOkay1",
+      "startHttpStatus": 201,
+      "status": "SUCCEEDED",
+      "startedAt": "2026-09-23T06:19:51.448Z",
+      "finishedAt": "2026-09-23T06:20:03.152Z",
+      "defaultDatasetId": "SyntheticDataset1",
+      "defaultKeyValueStoreId": "SyntheticKvStore1",
+      "datasetReadHttpStatus": 200,
+      "observedItemCount": 1,
+      "completeSearchCoverage": false,
+      "usageTotalUsd": 0.012,
+      "chargedEventCounts": {"apify-actor-start": 1, "apify-default-dataset-item": 1},
+      "input": {
+        "query": "[\"cafe assistant\",\"front of house\"]",
+        "country": "NZ",
+        "location": "Auckland",
+        "maxResults": 1,
+        "maxPages": 1,
+        "sortMode": "date",
+        "includeDetails": true,
+        "includeApplicantInsights": false,
+        "descriptionFormat": "text",
+        "compact": false,
+        "incrementalMode": false,
+        "skipReposts": false
+      }
+    }
+  ],
+  "usageSummary": {
+    "currency": "USD",
+    "totalForTheseTwoRuns": 0.022,
+    "creditBalanceVerified": false,
+    "earlierConnectivityTestsIncluded": false,
+    "note": "The successful run initially returned 0.010; a subsequent read returned 0.012. These are reported gross usage amounts, not verified card charges."
+  }
+}

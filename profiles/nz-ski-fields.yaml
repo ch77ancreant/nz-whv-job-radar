@@ -1,0 +1,38 @@
+id: nz-ski-fields
+name: NZ Ski Field Service
+enabled: true
+country: NZ
+# Local relevance checks use the same phrases as the upstream location query.
+locations: [Queenstown, Wanaka, Canterbury, Methven, Tekapo, Ruapehu, Ohakune, Tasman]
+keywords: [lift operator, guest services, rental assistant, rentals, food and beverage, housekeeping]
+exclude_title: []
+# Deliberately omit broad tourism parent companies (e.g. RealNZ) to avoid
+# treating their unrelated rentals/hotels as confirmed ski-field employment.
+# Extend explicit aliases if a genuine SEEK advertiser uses another name.
+employers:
+  - NZSki
+  - NZ Ski
+  - Coronet Peak
+  - The Remarkables
+  - Mt Hutt
+  - Mount Hutt
+  - Cardrona
+  - Treble Cone
+  - Whakapapa
+  - Turoa
+  - Porters Alpine Resort
+  - Ohau Snow Fields
+  - Lake Ohau Lodge
+  - Snow Farm
+  - Roundhill
+  - Mt Lyford
+  - Mount Lyford
+  - Mt Dobson
+  - Mount Dobson
+  - Rainbow Ski Area
+  - Broken River
+  - Craigieburn Valley
+  - Tukino
+max_results: 100
+max_pages: 3
+notification_labels: [likely_suitable, needs_confirmation]

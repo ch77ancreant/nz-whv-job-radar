@@ -1,0 +1,37 @@
+{
+  "fixtureKind": "live_links_and_robots_projection_not_job_response",
+  "observedOn": "2026-09-23",
+  "source": "cardrona_treble_cone",
+  "decision": "blocked_robots_disallow",
+  "provenance": {
+    "officialEntry": "https://cardrona-treblecone.com/employment",
+    "positionsPage": "https://cardrona-treblecone.com/employment/our-positions",
+    "linkedAts": "https://employment.cardrona.com/search",
+    "method": "Official page links and robots HTTP responses; restricted ATS search was not requested"
+  },
+  "observations": {
+    "positionsPageHttpStatus": 200,
+    "positionsPageIsActiveVacancyFeed": false,
+    "mainSiteRobots": {
+      "url": "https://cardrona-treblecone.com/robots.txt",
+      "httpStatus": 200,
+      "directivesExcerpt": "User-agent: *\nAllow: /"
+    },
+    "atsRobots": {
+      "url": "https://employment.cardrona.com/robots.txt",
+      "httpStatus": 200,
+      "wildcardGroupExcerpt": "User-agent: *\nDisallow: /\nCrawl-delay: 60"
+    },
+    "relatedRealNz": {
+      "officialEntry": "https://www.realnz.com/en/careers/",
+      "linkedAts": "https://employment.realnz.com",
+      "robotsUrl": "https://employment.realnz.com/robots.txt",
+      "robotsHttpStatus": 200,
+      "wildcardGroupExcerpt": "User-agent: *\nDisallow: /\nCrawl-delay: 60",
+      "usableFallback": false
+    },
+    "atsSearchRequested": false,
+    "jobSchemaVerified": false
+  },
+  "unblockWith": "Employer permission, an authorized feed/API, or another explicitly permitted listing source; do not bypass robots via another user agent or browser."
+}

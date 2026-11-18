@@ -1,0 +1,31 @@
+{
+  "fixtureKind": "disabled_source_manifest_with_documented_contract_not_api_response",
+  "observedOn": "2026-09-23",
+  "source": "trademe_jobs",
+  "decision": "disabled_missing_approved_access",
+  "provenance": {
+    "method": "Official documentation review and local environment key-name check only",
+    "apiReference": "https://developer.trademe.co.nz/api-reference/search-methods/jobs-search",
+    "authorizationReference": "https://developer.trademe.co.nz/api-overview/authorisation",
+    "termsReference": "https://developer.trademe.co.nz/terms-and-conditions"
+  },
+  "credentialsPresent": false,
+  "applicationApprovalVerified": false,
+  "liveJobsRequestSent": false,
+  "documentedContract": {
+    "method": "GET",
+    "url": "https://api.trademe.co.nz/v1/Search/Jobs.json",
+    "requiresAuthentication": true,
+    "permissionRequiredLabel": "None",
+    "anonymousAccessImplied": false,
+    "authorizationScheme": "OAuth 1.0a",
+    "responseFieldNames": ["TotalCount", "TotalCountTruncated", "Page", "PageSize", "List"],
+    "listingIdentityField": "ListingId",
+    "queryFieldNames": ["search_string", "region", "district", "page", "rows"]
+  },
+  "unblockWith": [
+    "Approved application and required credentials",
+    "Approved use covering persistence, reuse, cross-source combination, retention and notifications",
+    "Real authenticated list/detail samples and verified account rate limits"
+  ]
+}

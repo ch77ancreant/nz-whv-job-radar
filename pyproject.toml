@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nz-whv-job-radar"
+version = "0.1.0"
+description = "SEEK-only New Zealand job radar with conservative WHV screening and recoverable notifications"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["httpx>=0.28,<0.29", "PyYAML>=6.0,<7", "python-dotenv>=1.0,<2"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "ruff>=0.12,<1", "mypy>=1.16,<2", "types-PyYAML>=6"]
+
+[project.scripts]
+nz-job-radar = "nz_job_radar.cli:entrypoint"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.mypy]
+python_version = "3.12"
+files = ["src"]
+strict = true

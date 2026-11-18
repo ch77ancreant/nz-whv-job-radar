@@ -1,0 +1,41 @@
+{
+  "fixtureKind": "live_discovery_projection_not_job_response",
+  "observedOn": "2026-09-23",
+  "source": "nzski",
+  "decision": "blocked_access_and_schema_unverified",
+  "provenance": {
+    "officialEntry": "https://www.nzski.com/employment",
+    "linkedBoard": "https://jobs.dayforcehcm.com/en-NZ/trojanholdings/NZSKI-EMPLOYMENT",
+    "method": "Official outgoing link plus public board initial HTML __NEXT_DATA__; session omitted"
+  },
+  "observations": {
+    "boardHttpStatus": 200,
+    "initialQueryKeys": ["site-info"],
+    "jobListPresentInInitialHtml": false,
+    "jobCount": null,
+    "clientSideJobLoadingObservedInReferencedScript": true,
+    "siteInfoProjection": {
+      "clientNamespace": "trojanholdings",
+      "jobBoardCode": "nzski-employment",
+      "cultureCode": "en-NZ",
+      "jobBoardId": 4,
+      "legalBaseUrl": "https://dfonlinehelp.dayforcehcm.com/Global/Legal/English"
+    },
+    "robots": [
+      {
+        "url": "https://www.nzski.com/robots.txt",
+        "httpStatus": 403,
+        "challengeObserved": true,
+        "bypassed": false
+      },
+      {
+        "url": "https://jobs.dayforcehcm.com/robots.txt",
+        "httpStatus": 200,
+        "observedContent": "Content-Signal explanatory comments only; no active User-agent or Disallow directives",
+        "automationAuthorizationConfirmed": false
+      }
+    ]
+  },
+  "unverified": ["permitted automated method", "list and detail schemas", "stable posting identity", "pagination and closure signals", "source rate limits"],
+  "unblockWith": "Confirm allowed access with employer/ATS and capture representative live list and detail fixtures using that method."
+}
